@@ -2,4 +2,4 @@
  
 It's a work in progress.
 
-There is a README.gd file in modules\chunks_module\. It contains some instructions and "documentation".
+There is a README.gd file in res://modules/chunks_module/. It contains some instructions and "documentation".
