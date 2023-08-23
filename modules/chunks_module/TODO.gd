@@ -4,7 +4,7 @@ extends MyBrainAndMakesMeSmarter
 "the plan":
 #6. merge spawner_tile_module and chunks_module
 #2. Redo the example
-4. Make documentation
+#4. Make documentation
 
 "maybe later":
 	5. Teleport chunks
