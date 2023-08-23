@@ -1,0 +1,82 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "ChunkBase",
+"class": "Chunk",
+"language": "GDScript",
+"path": "res://modules/chunks_module/chunks/Chunk.gd"
+}, {
+"base": "Area2D",
+"class": "ChunkBase",
+"language": "GDScript",
+"path": "res://modules/chunks_module/chunks/ChunkBase.gd"
+}, {
+"base": "Node2D",
+"class": "ChunkFrame",
+"language": "GDScript",
+"path": "res://modules/chunks_module/ChunkFrame.gd"
+}, {
+"base": "Area2D",
+"class": "ChunkLoader",
+"language": "GDScript",
+"path": "res://modules/chunks_module/ChunkLoader.gd"
+}, {
+"base": "ChunkManagerBase",
+"class": "ChunkManager",
+"language": "GDScript",
+"path": "res://modules/chunks_module/chunk_managers/ChunkManager.gd"
+}, {
+"base": "YSort",
+"class": "ChunkManagerBase",
+"language": "GDScript",
+"path": "res://modules/chunks_module/chunk_managers/ChunkManagerBase.gd"
+}, {
+"base": "ChunkManagerBase",
+"class": "ChunkManagerLite",
+"language": "GDScript",
+"path": "res://modules/chunks_module/chunk_managers/ChunkManagerLite.gd"
+}, {
+"base": "ChunkBase",
+"class": "HeavyChunk",
+"language": "GDScript",
+"path": "res://modules/chunks_module/chunks/HeavyChunk.gd"
+} ]
+_global_script_class_icons={
+"Chunk": "",
+"ChunkBase": "",
+"ChunkFrame": "",
+"ChunkLoader": "",
+"ChunkManager": "",
+"ChunkManagerBase": "",
+"ChunkManagerLite": "",
+"HeavyChunk": ""
+}
+
+[application]
+
+config/name="SimpleChunks2D"
+run/main_scene="res://scenes/Main.tscn"
+config/icon="res://icon.png"
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"

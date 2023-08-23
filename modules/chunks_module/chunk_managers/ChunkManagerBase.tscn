@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://modules/chunks_module/chunk_managers/ChunkManagerBase.gd" type="Script" id=1]
+
+[node name="ChunkManagerBase" type="YSort"]
+script = ExtResource( 1 )

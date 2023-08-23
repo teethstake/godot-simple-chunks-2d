@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://modules/chunks_module/ChunkNeighbourMapper.gd" type="Script" id=1]
+
+[node name="ChunkNeighbourMapper" type="RayCast2D"]
+enabled = true
+collision_mask = 32768
+collide_with_areas = true
+collide_with_bodies = false
+script = ExtResource( 1 )
