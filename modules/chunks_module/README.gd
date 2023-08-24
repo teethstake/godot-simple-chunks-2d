@@ -11,7 +11,7 @@ Chunk:
 		- coordinates (0, 0) should be in the top left of the chunk, to avoid weird behavours,
 		while using ChunkManagerBase.find_chunk_key().
 		- it should be a sole child of ChunkFrame
-		- chunks' CollisionShape2D shouldn't
+		- chunks' CollisionShape2D shouldn't overlap
 		- CollisionShape2Ds shape has to be RectangleShape2D and it needs to cover the whole Chunk
 		- reload_chunk() can cause bugs. I didn't' have time to make it safe yet.
 	"Types":
